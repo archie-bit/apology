@@ -1,0 +1,182 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+* {
+    margin: 0;
+}
+  
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    background-color: #F7E1D7;
+}
+  
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+  
+input, button, textarea, select {
+    font: inherit;
+}
+  
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+  
+#root, #__next {
+    isolation: isolate;
+}
+
+
+@font-face {
+    font-family: 'baskervilleregular';
+    src: url('fonts/librebaskerville-regular-webfont.woff2') format('woff2'),
+         url('fonts/librebaskerville-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.audioPlayerContainer{
+    background-color: rgb(237 175 184);
+    border: solid#DEDBD2;
+    box-shadow: 0px -5px 20px #ffafcc;
+    position: fixed;
+    left: -10px;
+    top: 87vh;
+    width: 50%;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.songIcon{
+    border: 10px solid #DEDBD2;
+    border-radius: 50%;
+    width: 80px;
+}
+
+.songName{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color:black;
+}
+
+.artistName{
+    color: rgb(74 87 89);
+    font-size: 1rem;
+}
+
+.songDetails{
+    margin: auto 20px;
+}
+
+#audioPlayer{
+    border-radius: 10px;
+    width: 450px;
+}
+
+/* .playIcon,
+.pauseIcon{
+    display: inline-block;
+    width: 40px;
+    background-color: #DEDBD2;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.playIcon:hover{
+    cursor: pointer
+} */
+
+
+.section{
+    min-height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section:first-of-type{
+    min-height: 100vh;
+}
+
+
+.intro{
+    font-size: 5rem;
+}
+
+.intro::after{
+    /* content: "(Play the song pls)"; */
+    font-size: 1rem;
+}
+
+
+.text-section{
+    /* background-image: url(icons/4031900.jpg) ;
+    background-size: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #DEDBD2;
+    width:80%;
+    height: 50vh;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow:  20px 10px 10px rgb(74 87 89 / 30%);
+    transition: 1s ease;
+}
+
+
+.text-section:hover{
+    box-shadow:  20px 20px 30px rgb(74 87 89 / 90%);
+    transition: .5s ease;
+
+}
+
+.text{
+    text-align: center;
+    font-family: 'baskervilleregular';
+    font-size: 2rem;;
+}
+
+
+.decorative-line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.symbol{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+.symbol::before,
+.symbol::after {
+    content: '───────────';
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100px);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateY(0px);
+
+}
