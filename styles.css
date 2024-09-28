@@ -105,7 +105,9 @@ p, h1, h2, h3, h4, h5, h6 {
     justify-content: center;
 }
 
-.section:first-of-type{
+.section:first-of-type,
+.section:last-of-type
+{
     min-height: 100vh;
 }
 
