@@ -41,13 +41,15 @@ p, h1, h2, h3, h4, h5, h6 {
 
 
 .audioPlayerContainer{
+    --height: 15vh;
     background-color: rgb(237 175 184);
     border: solid#DEDBD2;
     box-shadow: 0px -5px 20px #ffafcc;
     position: fixed;
     left: -10px;
-    top: 87vh;
+    top: calc(100vh - var(--height) + 1vh);
     width: 50%;
+    height: var(--height);
     border-radius: 10px;
     padding: 10px;
     display: flex;
