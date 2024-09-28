@@ -66,11 +66,13 @@ p, h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-size: 1.5rem;
     color:black;
+    font-family: sans-serif;
 }
 
 .artistName{
     color: rgb(74 87 89);
     font-size: 1rem;
+    font-family: sans-serif;
 }
 
 .songDetails{
